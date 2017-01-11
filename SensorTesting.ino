@@ -22,8 +22,20 @@ void setup() {
 
 void loop() {
   
- // switchState = digitalRead(switchPin); 
-  //waterValue = analogRead(waterSensorPin); 
+  /*CODE FOR PUMPS
+ switchState = digitalRead(switchPin); 
+ waterValue = analogRead(waterSensorPin); 
+ if switchState == HIGH 
+  {
+ digitalWrite(motorpin1, HIGH); 
+ digitalWrite(motorpin2, HIGH); 
+  }
+else {
+ digitalWrite(motorpin1, LOW); 
+ digitalWrite(motorpin2, LOW);   
+}
+*/
+  
  
   int waterValueC = analogRead(waterSensorPinC); 
 //  int waterValueA = analogRead(A0); //blue
@@ -32,5 +44,5 @@ void loop() {
  // Serial.println("Blue: " + String(waterValueA) + "    Red: " + String(waterValueB)); 
   //delay(500); 
   Serial.println(waterValueC); 
-  delay (500); 
+  delay(500); 
 }
